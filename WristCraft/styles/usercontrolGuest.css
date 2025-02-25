@@ -1,0 +1,141 @@
+/* For screens wider than 768px (like tablets and desktops) */
+@media (min-width: 768px) {
+    .container {
+      width: 70%;
+    }
+  }
+  
+  /* For screens smaller than 768px (like phones) */
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+  body {
+    background-color: silver;
+    margin: 0;
+    padding: 0;
+}
+/* Page Title */
+.pPageTitle {
+    margin-bottom: 30px;
+}
+
+/* Form Section */
+#formUpdateUserInfors {
+    margin: 0 auto;
+}
+
+#formUpdateUserInfors table {
+    margin: 0 auto;
+}
+
+#formUpdateUserInfors th,
+#formUpdateUserInfors td {
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+#formUpdateUserInfors th {
+    font-weight: bold;
+    color: #333;
+}
+
+#formUpdateUserInfors textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#formUpdateUserInfors input[type="text"],
+#formUpdateUserInfors input[type="number"],
+#formUpdateUserInfors input[type="date"],
+#formUpdateUserInfors input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+#formUpdateUserInfors input[type="text"],
+#formUpdateUserInfors input[type="number"],
+#formUpdateUserInfors input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#formUpdateUserInfors input[type="submit"],
+#formUpdateUserInfors input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#formUpdateUserInfors input[type="reset"] {
+    background-color: red;
+}
+
+#formUpdateUserInfors input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#formUpdateUserInfors input[type="reset"]:hover {
+    background-color: darkred;
+}
+
+/* Result Message */
+.pResultLogin {
+    font-size: 18px;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tableCart {
+    border-color: goldenrod;
+    border-width: thin;
+    font-size: 17px;
+}
+.tableCart tr#trTop_TableCart {
+    background: #000;
+    color: goldenrod;
+}
+
+.tableCart tr#trBottom_TableCart {
+    background: #000;
+    color: goldenrod;
+    /*border: none;*/
+}
+
+.tableCart tr#trBottom_TableCart td {
+    border: none;
+}
+
+.tableCart td {
+    border-color: goldenrod;
+    padding-left: 10px;
+}
+
+.tableCart th {
+    text-align: center;
+    font-size: 14px;
+}
+
+.pResultLogin {
+    color: red;
+    font-style: italic;
+}
+
+.spanProductPrice {
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+}

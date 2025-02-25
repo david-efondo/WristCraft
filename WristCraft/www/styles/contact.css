@@ -1,0 +1,34 @@
+/* For screens wider than 768px (like tablets and desktops) */
+@media (min-width: 768px) {
+    .container {
+      width: 70%;
+    }
+  }
+  
+  /* For screens smaller than 768px (like phones) */
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+.tableFeedback {
+    width: 600px;
+    border: none;
+    
+}
+
+.pResultFeedback {
+    color: red;
+    font-style: italic;
+}
+
+#CompanyName {
+    font-weight: bold;
+    color: darkred;
+}
+
+#Address, #PhoneNumber, #Email {
+    font-style: italic;
+    color: darkred;
+}

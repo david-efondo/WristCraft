@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LeftMenu>
+	<Option>
+		<Name>All</Name>
+		<Link>products.php</Link>
+	</Option>
+	<Option>
+		<Name>Casio</Name>
+		<Link>products.php?type=Casio</Link>
+	</Option>
+	<Option>
+		<Name>Rolex</Name>
+		<Link>products.php?type=Rolex</Link>
+	</Option>
+	<Option>
+		<Name>Omega</Name>
+		<Link>products.php?type=Omega</Link>
+	</Option>
+	<Option>
+		<Name>Epos Swiss</Name>
+		<Link>products.php?type=Epos Swiss</Link>
+	</Option>
+</LeftMenu>

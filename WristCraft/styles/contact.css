@@ -1,0 +1,98 @@
+/* For screens wider than 768px (like tablets and desktops) */
+@media (min-width: 768px) {
+    .container {
+      width: 70%;
+    }
+  }
+  
+  /* For screens smaller than 768px (like phones) */
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+/* Feedback Form Section */
+#sectionFeedback {
+  border-radius: 5px;
+}
+
+.tableFeedback {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tableFeedback th,
+.tableFeedback td {
+  padding: 10px;
+  text-align: left;
+}
+
+.tableFeedback th {
+  font-weight: bold;
+}
+
+.tableFeedback input[type="text"],
+.tableFeedback input[type="email"],
+.tableFeedback textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.tableFeedback textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.tableFeedback input[type="submit"]
+ {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.tableFeedback input[type="reset"]
+
+  {
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.tableFeedback input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.tableFeedback input[type="reset"]:hover {
+  background-color: darkred;
+}
+
+/* Feedback Result Message */
+.pResultFeedback {
+  font-size: 18px;
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#CompanyName {
+    font-weight: bold;
+    color: darkred;
+}
+
+#Address, #PhoneNumber, #Email {
+    font-style: italic;
+    color: darkred;
+}

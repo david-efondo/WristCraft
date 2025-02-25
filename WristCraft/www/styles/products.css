@@ -1,0 +1,93 @@
+/* Responsive Container */
+@media (min-width: 768px) {
+    .container {
+        width: 100%; /* Full width for all screen sizes */
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Products Container */
+.divProducts {
+    width: 100%; /* Full width */
+    background-color: #666;
+    position: relative;
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 11px; /* Spacing between items */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+/* Product Item */
+.divProduct {
+    flex: 1 1 calc(33.333% - 11px); /* Flexbox-based width */
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .divProduct {
+        flex: 1 1 calc(50% - 11px); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .divProduct {
+        flex: 1 1 100%; /* Full width for very small screens */
+    }
+}
+
+/* Product Details */
+.divProductDetail {
+    text-align: left;
+    vertical-align: bottom;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    position: absolute;
+}
+
+.divProductDetail a:link,
+.divProductDetail a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.divProductDetail a:hover,
+.divProductDetail a:active,
+.divProductDetail a:focus {
+    color: #DAA520;
+    text-decoration: underline;
+}
+
+/* Product Text Styles */
+.spanProductName {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.spanProductPriceLabel {
+    color: #FFF;
+    font-size: 15px;
+}
+
+.spanProductPrice {
+    color: gold;
+    font-size: 20px;
+    font-weight: bold;
+}

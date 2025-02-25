@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+/* Responsive Container */
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Base Styles */
+body {
+    font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+    background-color: #42413C;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+ul, ol, dl {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 20px 0 10px;
+    line-height: 25px;
+}
+
+a img {
+    border: none;
+}
+
+a:link {
+    color: #42413C;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6E6C64;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+
+header, section, footer, aside, article, figure {
+    display: block;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    height: 100px;
+    position: relative;
+    display: flex; /* Added Flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items */
+    padding-bottom: 40px; /* Add padding for spacing */
+}
+
+.divGuestCart {
+    font-size: 25px;
+    padding-top: 50px;
+    padding-right: 50px;
+    position: relative; /* Changed from absolute to relative */
+    top: 0;
+}
+
+.divGuestCart a:link,
+.divGuestCart a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.divGuestCart a:hover,
+.divGuestCart a:active,
+.divGuestCart a:focus {
+    color: #DAA520;
+    text-decoration: none;
+}
+
+/* Container */
+.divContainer {
+    background-color: #42413C;
+    margin: 0 auto;
+    display: flex; /* Added Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure container takes full viewport height */
+}
+
+/* Top Menu Styles */
+.divTopMenu {
+    background-color: #000;
+    padding: 5px 0 5px 15px;
+}
+
+nav ul#ulTopMenu {
+    list-style: none;
+    background-color: #000;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex; /* Added Flexbox */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Align items to the start */
+}
+
+nav ul#ulTopMenu li {
+    display: inline-block; /* Change to inline-block for better control */
+    position: relative; /* Required for dropdown positioning */
+    margin: 0 10px; /* Add spacing between menu items */
+}
+
+nav ul#ulTopMenu li a,
+nav ul#ulTopMenu li a:visited {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+}
+
+nav ul#ulTopMenu li a:hover,
+nav ul#ulTopMenu li a:active,
+nav ul#ulTopMenu li a:focus {
+    color: #DAA520;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    top: 100%; /* Position below the parent item */
+    left: 0;
+    background-color: #000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 160px; /* Match parent width */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #666; /* Add separation between submenu items */
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.dropdown-content li a:hover {
+    background-color: #333; /* Add hover effect for submenu items */
+    color: #DAA520;
+}
+
+/* Show Submenu on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown > a::after {
+    content: " ▼"; /* Add a down arrow */
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+/* Wrappers */
+.divWrapper_1 {
+    position: relative;
+    right: 780px;
+}
+
+.divWrapper_2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: silver;
+    position: relative;
+    margin-bottom: 10px;
+    flex: 1; /* Allow wrapper to grow and fill remaining space */
+}
+
+/* Main Content */
+.divMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 780px;
+    flex: 1; /* Allow main content to grow and fill remaining space */
+}
+
+.articleContent {
+    margin: 10px;
+    width: 100%;
+    float: right;
+    line-height: 25px;
+}
+
+.pPageTitle {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.spanRequiredField {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: super;
+}
+
+/* Content Links */
+a.aContent,
+a.aContent:visited,
+a.aContent:hover,
+a.aContent:active,
+a.aContent:focus {
+    font-weight: bold;
+    color: darkred;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    font-size: 12px;
+    text-align: left;
+    font-style: italic;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000;
+    color: #FFF;
+    clear: both;
+    display: flex; /* Added Flexbox */
+    justify-content: space-between; /* Space out footer content */
+    align-items: center; /* Center items vertically */
+}
+
+.spanFooterTitle {
+    color: #DAA520;
+}
+
+/* Login Result */
+.pResultLogin {
+    color: red;
+    font-style: italic;
+}

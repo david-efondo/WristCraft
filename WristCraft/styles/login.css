@@ -1,0 +1,106 @@
+/* For screens wider than 768px (like tablets and desktops) */
+@media (min-width: 768px) {
+    .container {
+      width: 70%;
+    }
+  }
+  
+  /* For screens smaller than 768px (like phones) */
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+/* General Styles */
+body {
+  background-color: silver;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Page Title */
+.pPageTitle {
+  margin-bottom: 20px;
+}
+
+/* Login Form Section */
+#formLogin {
+  margin: 0 auto;
+}
+
+.tableRegister {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tableRegister th,
+.tableRegister td {
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.tableRegister th {
+  color: #333;
+}
+
+.tableRegister input[type="text"],
+.tableRegister input[type="email"],
+.tableRegister input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.tableRegister input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.tableRegister input[type="reset"]
+  {
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+.tableRegister input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.tableRegister input[type="reset"] {
+  background-color: red;
+}
+
+.tableRegister input[type="reset"]:hover {
+  background-color: darkred;
+}
+
+/* Required Field Indicator */
+.spanRequiredField {
+  color: red;
+  font-weight: bold;
+}
+
+/* Login Result Message */
+.pResultLogin {
+  font-size: 18px;
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
